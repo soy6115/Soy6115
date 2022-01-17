@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="h1">36sp</dimen>
+    <dimen name="btnsMain">20sp</dimen>
+    <dimen name="liDesplegable">24sp</dimen>
+
+</resources>

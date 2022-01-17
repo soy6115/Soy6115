@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="tipografia">
+        <item name="android:fontFamily">@font/edo</item>
+    </style>
+
+    <style name="h1" parent="tipografia">
+        <item name="android:textSize">@dimen/h1</item>
+        <item name="android:shadowColor">@color/azulSombra</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+    <style name="btnsMian" parent="tipografia">
+        <item name="android:textSize">@dimen/btnsMain</item>
+        <item name="android:textColor">@color/naranja</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:shadowColor">@color/azulSombra</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDx">3</item>
+        <item name="android:shadowDy">3</item>
+    </style>
+
+    <style name="liMenuDesplegable">
+        <item name="android:fontFamily">@font/nimbus</item>
+        <item name="android:textColor">@color/azulSombra</item>
+        <item name="android:textSize">@dimen/liDesplegable</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+
+
+    <!--<item name="android:"></item>-->
+
+</resources>

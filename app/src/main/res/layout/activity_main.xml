@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".activitys.MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/columna1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/columna2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/columna3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/columna4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fila1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fila2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fila3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fila4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.44" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fila5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.46" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fila6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.68" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fila7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fila8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clCajaTextos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintTop_toTopOf="@id/fila1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/fila2">
+
+        <TextView
+            android:id="@+id/tvH1p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintHorizontal_chainStyle="packed"
+            android:layout_marginEnd="7dp"
+            tools:text="Bienvenidos a"
+
+            style="@style/h1"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvH1p2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tvH1p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            tools:text="6115"
+
+            style="@style/h1"
+            android:textColor="@color/naranja"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvH1p1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btnFormacion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintTop_toTopOf="@id/fila3"
+        app:layout_constraintStart_toStartOf="@id/columna1"
+        app:layout_constraintEnd_toEndOf="@id/columna2"
+        app:layout_constraintBottom_toBottomOf="@id/fila4">
+
+        <ImageButton
+            android:id="@+id/ibFormacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/btn_formacion"
+            android:layout_marginBottom="10dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvFormacion"
+            />
+
+        <TextView
+            android:id="@+id/tvFormacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Formación"
+            style="@style/btnsMian"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btnExperiencia"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:gravity="center"
+
+        app:layout_constraintTop_toTopOf="@id/fila3"
+        app:layout_constraintStart_toStartOf="@id/columna3"
+        app:layout_constraintEnd_toEndOf="@id/columna4"
+        app:layout_constraintBottom_toBottomOf="@id/fila4">
+
+        <ImageButton
+            android:id="@+id/ibExperiencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/btn_experiencia"
+            android:layout_marginBottom="10dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvExperiencia"
+            />
+
+        <TextView
+            android:id="@+id/tvExperiencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Experiencia laboral"
+            style="@style/btnsMian"
+            android:maxLines="1"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btnApps"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:gravity="center"
+
+        app:layout_constraintTop_toTopOf="@id/fila5"
+        app:layout_constraintStart_toStartOf="@id/columna1"
+        app:layout_constraintEnd_toEndOf="@id/columna2"
+        app:layout_constraintBottom_toBottomOf="@id/fila6">
+
+        <ImageButton
+            android:id="@+id/ibApps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/btn_apps"
+            android:layout_marginBottom="10dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvApps"
+            />
+
+        <TextView
+            android:id="@+id/tvApps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Apps"
+            style="@style/btnsMian"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btnDisenio"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:gravity="center"
+
+        app:layout_constraintTop_toTopOf="@id/fila5"
+        app:layout_constraintStart_toStartOf="@id/columna3"
+        app:layout_constraintEnd_toEndOf="@id/columna4"
+        app:layout_constraintBottom_toBottomOf="@id/fila6">
+
+        <ImageButton
+            android:id="@+id/ibDisenio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/btn_disenio"
+            android:layout_marginBottom="10dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvDisenio"
+            />
+
+        <TextView
+            android:id="@+id/tvDisenio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Diseño"
+            style="@style/btnsMian"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btnOtrosDatos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:gravity="center"
+
+        app:layout_constraintTop_toTopOf="@id/fila7"
+        app:layout_constraintStart_toStartOf="@id/columna1"
+        app:layout_constraintEnd_toEndOf="@id/columna2"
+        app:layout_constraintBottom_toBottomOf="@id/fila8">
+
+        <ImageButton
+            android:id="@+id/ibOtrosDatos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/btn_otrosdatos"
+            android:layout_marginBottom="10dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvOtrosDatos"
+            />
+
+        <TextView
+            android:id="@+id/tvOtrosDatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Otros datos"
+            style="@style/btnsMian"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btnSobreMi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:gravity="center"
+
+        app:layout_constraintTop_toTopOf="@id/fila7"
+        app:layout_constraintStart_toStartOf="@id/columna3"
+        app:layout_constraintEnd_toEndOf="@id/columna4"
+        app:layout_constraintBottom_toBottomOf="@id/fila8">
+
+        <ImageButton
+            android:id="@+id/ibSobreMi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/btn_sobremi"
+            android:layout_marginBottom="10dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvSobreMi"
+            />
+
+        <TextView
+            android:id="@+id/tvSobreMi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Sobre mi"
+            style="@style/btnsMian"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        app:layout_constraintTop_toTopOf="@id/fila8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/ibGitHub"
+            android:contentDescription="@string/btn_github"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="20dp"
+
+            android:background="@drawable/btn_github"/>
+
+        <ImageButton
+            android:id="@+id/ibLinkedin"
+            android:contentDescription="@string/btn_linkedin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="20dp"
+
+            android:background="@drawable/btn_linkedin" />
+
+        <ImageButton
+            android:id="@+id/ibMail"
+            android:contentDescription="@string/btn_linkedin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="20dp"
+
+            android:background="@drawable/btn_mail" />
+
+        <ImageButton
+            android:id="@+id/ibCV"
+            android:contentDescription="@string/btn_linkedin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/btn_cv" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

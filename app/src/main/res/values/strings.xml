@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Soy6115</string>
+    <string name="btn_github">botón icono github</string>
+    <string name="btn_linkedin">botón icono linkedin</string>
+    <string name="btn_mail">botón icono mail</string>
+    <string name="btn_cv">botón curriculum vitae</string>
+    <string name="tv_H1p1">Bienvenidos a </string>
+    <string name="tv_H1p2"> 6115</string>
+</resources>

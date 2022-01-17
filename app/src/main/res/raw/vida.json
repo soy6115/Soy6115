@@ -1,0 +1,44 @@
+{
+	"experienciaLaboral": [ 
+		{
+			"empresa": "infotrans",
+			"periodo": [
+				2007,
+				2008,
+				2009
+			],
+			"puesto": "diseñador",
+			"descripcion": "Empece a trabajar haciendo"
+		},
+		{
+			"empresa": "el corte ingles",
+			"periodo": [
+				2004,
+				2005
+			],
+			"puesto": "vendendor",
+			"descripcion": "por las tardes, compaginando con los estudios"
+		}
+
+	], 
+	"formacionAcademica": [
+		{
+			"titulo": "DAW",
+			"periodo": [
+				2010,
+				2011,
+				2012
+			],
+			"notaMedia": 9
+		},
+		{		
+			"titulo": "DAM",
+			"periodo": [
+				2008,
+				2009
+			],
+			"notaMedia": 9
+		}
+	
+	]
+}
